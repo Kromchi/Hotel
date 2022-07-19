@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using static OMenu.OwnerMenu;
-using static BetterBook.CleanMenu;
+using static BetterBooking.Core.Attractions.OwnerMenu;
+using static BetterBooking.Core.Attractions.CleanMenu;
 
-namespace BetterBook // Note: actual namespace depends on the project name.
+namespace BetterBooking.Core.Attractions // Note: actual namespace depends on the project name.
 {
-    internal class Hotel
+    internal class AttractionMenu
     {
         
 
@@ -37,7 +37,7 @@ namespace BetterBook // Note: actual namespace depends on the project name.
                         {
                             Console.Clear();
                             Console.WriteLine("Pomyślnie Zalogowano! \n");
-                            OMenu.OwnerMenu.stuff(userInput);
+                            BetterBooking.Core.Attractions.OwnerMenu.stuff(userInput);
 
                         }
                         else Console.WriteLine("Złe hasło! \n");
@@ -45,14 +45,20 @@ namespace BetterBook // Note: actual namespace depends on the project name.
                         break;
 
                     case 2:
-                        BetterBook.CleanMenu.View();
+                        BetterBooking.Core.Attractions.CleanMenu.View();
 
 
                         break;
                     
                     default: 
-                        Console.WriteLine("Wybierz jeszcze raz \n");
+                        if (userInput == 0)
+                        {
+                            Console.WriteLine("Wybierz jeszcze raz \n");
+                        }
+                        
                         break;
+
+
 
                 }
             };

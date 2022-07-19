@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static BetterBook.Hotel;
-using static OMenu.OwnerMenu;
+using static BetterBooking.Core.Attractions.AttractionMenu;
+using static BetterBooking.Core.Attractions.OwnerMenu;
 
-namespace BetterBook
-{
+namespace BetterBooking.Core.Attractions { 
     public class CleanMenu
     {
         public static void View()

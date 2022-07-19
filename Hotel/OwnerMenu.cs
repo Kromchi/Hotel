@@ -1,7 +1,7 @@
-﻿using static BetterBook.Hotel;
-using static BetterBook.CleanMenu;
+﻿using static BetterBooking.Core.Attractions.AttractionMenu;
+using static BetterBooking.Core.Attractions.CleanMenu;
 
-namespace OMenu
+namespace BetterBooking.Core.Attractions
 {
     public class OwnerMenu
     {
