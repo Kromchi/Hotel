@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using static OMenu.OwnerMenu;
+using static BetterBook.CleanMenu;
 
 namespace BetterBook // Note: actual namespace depends on the project name.
 {
@@ -20,7 +22,7 @@ namespace BetterBook // Note: actual namespace depends on the project name.
                 
                 Console.WriteLine("Wybierz jedną z opcji: \n");
                 Console.WriteLine("1 - Zaloguj się");
-                Console.WriteLine("2 - Przeglądaj");
+                Console.WriteLine("2 - Przeglądaj Atrakcje");
                 Console.WriteLine("0 - Wyjście");
 
                 string pw = "123";
@@ -43,7 +45,7 @@ namespace BetterBook // Note: actual namespace depends on the project name.
                         break;
 
                     case 2:
-                        Console.WriteLine("Druga opcja");
+                        BetterBook.CleanMenu.View();
 
 
                         break;
